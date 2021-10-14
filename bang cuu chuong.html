@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let soul;
+    soul = "<table style='border: 1px solid; width: 800px; height: 500px; border-collapse: collapse; text-align: center'>";
+    for (i = 1; i <= 9; i++) {
+        soul = soul + "<tr>";
+        for (j = 1; j < 10; j++) {
+            product = j * i;
+            soul = soul + "<td style='border: 1px solid; border-collapse: collapse'>" + j + "x" + i + '=' + product + "</td>";
+        }
+        soul = soul + '</td>';
+    }
+    soul = soul + '</table>'
+    document.write(soul)
+</script>
+</body>
+</html>
